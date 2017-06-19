@@ -131,5 +131,15 @@ class ViewController: UIViewController {
         
     }
     
+    //function for clear button(clears all variables and operations)
+    @IBAction func clearPressed(_ sender: Any) {
+        outputLabel.text = "0"
+        result = ""
+        runningNumber = ""
+        leftHandValue = ""
+        rightHandValue = ""
+        currentOperation = Operation.Empty
+    }
+
 }
 

@@ -231,22 +231,36 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0g-8d-bNx">
-                                <rect key="frame" x="39" y="47" width="297" height="60"/>
+                                <rect key="frame" x="84" y="47" width="252" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-rJ-90f">
+                                <rect key="frame" x="24" y="51" width="59" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="6C7-HY-fh0"/>
+                                    <constraint firstAttribute="height" constant="56" id="nPC-WS-QBn"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="clear"/>
+                                <connections>
+                                    <action selector="buttonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMc-Ws-cxf"/>
+                                    <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hj-xw-gj5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56693248060000001" green="0.2817170668487774" blue="0.33903980568228625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="aFE-U3-vWf" firstAttribute="centerX" secondItem="PXx-K8-Awd" secondAttribute="centerX" id="4ic-xM-pg0"/>
+                            <constraint firstItem="yE6-rJ-90f" firstAttribute="centerY" secondItem="g3B-lR-yN6" secondAttribute="centerY" constant="2.5" id="729-Da-z9Q"/>
                             <constraint firstItem="PXx-K8-Awd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Db5-fi-yTl"/>
+                            <constraint firstItem="yE6-rJ-90f" firstAttribute="leading" secondItem="g3B-lR-yN6" secondAttribute="leading" id="FUQ-Ze-csK"/>
                             <constraint firstItem="g3B-lR-yN6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nlu-92-Gme"/>
                             <constraint firstItem="S0g-8d-bNx" firstAttribute="centerY" secondItem="g3B-lR-yN6" secondAttribute="centerY" id="at4-74-EtJ"/>
                             <constraint firstItem="aFE-U3-vWf" firstAttribute="centerY" secondItem="PXx-K8-Awd" secondAttribute="centerY" id="bPz-Uc-yms"/>
                             <constraint firstItem="aFE-U3-vWf" firstAttribute="top" secondItem="g3B-lR-yN6" secondAttribute="bottom" constant="48" id="kZl-Nf-jmX"/>
                             <constraint firstItem="S0g-8d-bNx" firstAttribute="trailing" secondItem="g3B-lR-yN6" secondAttribute="trailing" constant="-15" id="qAj-1x-ccn"/>
-                            <constraint firstItem="S0g-8d-bNx" firstAttribute="leading" secondItem="g3B-lR-yN6" secondAttribute="leading" constant="15" id="vsQ-Ny-nMZ"/>
+                            <constraint firstItem="S0g-8d-bNx" firstAttribute="leading" secondItem="g3B-lR-yN6" secondAttribute="leading" constant="60" id="vsQ-Ny-nMZ"/>
                             <constraint firstItem="PXx-K8-Awd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="55" id="xeK-pN-cKI"/>
                         </constraints>
                     </view>
@@ -271,6 +285,7 @@
         <image name="8" width="128" height="128"/>
         <image name="9" width="128" height="128"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="128" height="128"/>
         <image name="division" width="128" height="128"/>
         <image name="equal" width="128" height="128"/>
         <image name="minus" width="128" height="128"/>
